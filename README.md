@@ -1,20 +1,66 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Geometric Admin Dashboard
 
-# Run and deploy your AI Studio app
+A lightweight React + Vite admin dashboard for a library management system. The app is built with TypeScript, React 19, Vite, Tailwind CSS and Lucide icons, and uses seeded client-side data for books, members, and issue history.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/54a73822-4050-45c8-87b9-7814519991cf
+- Dashboard view with stock stats, active issues, overdue alerts, and recent transactions
+- Issue new books by member ID and book number
+- Return issued books with fine calculation
+- Searchable book inventory
+- Member directory and records view
+- Full issue history with status badges and return tracking
+- Toast notifications for actions and errors
 
-## Run Locally
+## Tech stack
 
-**Prerequisites:**  Node.js
+- React 19
+- TypeScript
+- Vite
+- Tailwind CSS
+- Lucide React icons
 
+## Getting started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+
+- Node.js 18+ (or compatible)
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Run locally
+
+```bash
+npm run dev
+```
+
+The app will be served by Vite, by default on port `3000`.
+
+### Build for production
+
+```bash
+npm run build
+```
+
+### Preview production build
+
+```bash
+npm run preview
+```
+
+## Project structure
+
+- `src/App.tsx` — main dashboard app and view routing
+- `src/main.tsx` — React entrypoint
+- `src/index.css` — global styles and Tailwind import
+- `package.json` — dependencies and scripts
+
+## Notes
+
+- The app uses local seed data in `src/App.tsx` and does not require an API key or backend server.
+- Data changes are stored only in memory during the current browser session.
+- `npm run lint` runs TypeScript type checking with `tsc --noEmit`.
