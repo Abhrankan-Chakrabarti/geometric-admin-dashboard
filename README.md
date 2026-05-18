@@ -64,3 +64,8 @@ npm run preview
 - The app uses local seed data in `src/App.tsx` and does not require an API key or backend server.
 - Data changes are stored only in memory during the current browser session.
 - `npm run lint` runs TypeScript type checking with `tsc --noEmit`.
+
+## Specification
+
+- The original academic brief is available in `SPECIFICATION.md`.
+- It describes the library schema, issue/return rules, grace period, and fine calculation.
